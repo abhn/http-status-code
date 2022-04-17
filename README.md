@@ -8,6 +8,14 @@ Extremely simple Docker Nginx setup that can return most HTTP status codes for t
 - Run `docker build -t return-status . && docker run -d -p 8080:80 return-status` to build and start the project at port 8080
 - Open `"status_code".localhost:8080` and the page will return the HTTP status code as directed.
 
+### Examples
+#### `curl -v 502.localhost`
+![image](https://user-images.githubusercontent.com/6270406/163708229-a03260f6-a4cf-49ea-a644-69fc545fb7ae.png)
+
+#### `curl -v 204.localhost`
+![image](https://user-images.githubusercontent.com/6270406/163708253-ea2855bb-c364-41c1-99b9-14dcd25317bd.png)
+
+
 ### Supported HTTP Codes
 ```py
 http_status_codes = {
